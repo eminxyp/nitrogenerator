@@ -1,0 +1,97 @@
+<html>
+  <head>
+<title>Nitro Generator</title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<style>
+@media (max-width: 500px) {
+textarea {
+  height: 100px;
+  line-height:1.25;
+}
+button {
+	background-color:#ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:50px;
+	padding:50px 60px;
+	text-decoration:none;
+  border-radius: 10px; /* Köşe yuvarlama */
+  }
+}
+}
+ 
+.button0 {
+  font-size:20px;
+  padding:50px 60px;
+  border-radius: 10px; /* Köşe yuvarlama */
+  }
+}
+</style>
+</head>
+<body background="https://wallpaperaccess.com/full/1564031.jpg">
+<style>
+  textarea {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #ffffff;
+    padding: 8px;
+    font-family: courier new;
+    opacity: 0.5; /* 50% opaklık */
+    border-radius: 10px; /* Köşe yuvarlama */
+    }
+}
+
+body {
+    background-color: #000;
+}
+
+input {
+    background-color: #030000;
+    color: #ffffff;
+    border-radius: 10px; /* Köşe yuvarlama */
+  
+}
+
+button {
+	background-color:#000000;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 8px;
+	text-decoration:none;
+  border-radius: 10px; /* Köşe yuvarlama */
+  }
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+</style>
+<div>
+<h1 style="font-family: Bebas; color: #ffffff">Discord Nitro Generator</h1>
+<textarea id="a" rows="11" cols="100" readonly="" style="resize: none;">Discord Nitro Generator
+</textarea>
+<p></p>
+<p></p>
+<p style="font-family: Arial; color: #ffffff">1 saniyede token üretir.</p>
+<input type="text" id="speed" value="5">
+<p></p>
+<button id="generate" class="button">
+  Başlat
+</button>
+
+<button id="stop" class="button">
+  Durdur
+</button>
+    
+<button onclick="stop(); document.getElementById('a').value = '\n\n\nSıfırlandı\n\n\n'; document.getElementById('b').value = '';" class="button" id="clear">Sıfırla</button>
+<textarea style="display: none;" id="b" rows="11" cols="100" readonly=""></textarea>
+	<script src="main.js"></script>
+</div>
+	<p></p>
+
+</body></html>
+
+<!-- Kod by: [Eminxyp] -->
